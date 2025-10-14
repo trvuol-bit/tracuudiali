@@ -1,0 +1,264 @@
+[
+  {
+    "term": "Địa hình",
+    "definition": "Toàn bộ bề mặt không bằng phẳng của Trái Đất, gồm núi, cao nguyên, đồng bằng, thung lũng,...",
+    "category": "Tự nhiên"
+  },
+  {
+    "term": "Khí hậu",
+    "definition": "Tổng hợp tình hình thời tiết đặc trưng của một khu vực trong thời gian dài, thường là nhiều năm.",
+    "category": "Tự nhiên"
+  },
+  {
+    "term": "Thời tiết",
+    "definition": "Tình trạng khí quyển tại một địa điểm trong một thời gian ngắn, thường là vài giờ hoặc vài ngày.",
+    "category": "Tự nhiên"
+  },
+  {
+    "term": "Nhiệt độ trung bình năm",
+    "definition": "Giá trị trung bình của nhiệt độ không khí trong 12 tháng của một năm.",
+    "category": "Tự nhiên"
+  },
+  {
+    "term": "Lượng mưa",
+    "definition": "Lượng nước mưa rơi xuống tại một khu vực trong khoảng thời gian nhất định, thường tính bằng mm.",
+    "category": "Tự nhiên"
+  },
+  {
+    "term": "Gió mùa",
+    "definition": "Loại gió thổi theo mùa, có hướng thay đổi giữa mùa hạ và mùa đông.",
+    "category": "Tự nhiên"
+  },
+  {
+    "term": "Thủy văn",
+    "definition": "Ngành khoa học nghiên cứu về nước trên Trái Đất, bao gồm sông, hồ, nước ngầm và đại dương.",
+    "category": "Tự nhiên"
+  },
+  {
+    "term": "Sông ngòi",
+    "definition": "Mạng lưới các dòng chảy tự nhiên trên bề mặt đất, có nguồn, dòng và cửa sông.",
+    "category": "Tự nhiên"
+  },
+  {
+    "term": "Biển",
+    "definition": "Vùng nước mặn rộng lớn tiếp giáp hoặc nối liền với đại dương.",
+    "category": "Tự nhiên"
+  },
+  {
+    "term": "Đại dương",
+    "definition": "Khối nước mặn khổng lồ bao phủ hơn 70% diện tích bề mặt Trái Đất.",
+    "category": "Tự nhiên"
+  },
+  {
+    "term": "Khoáng sản",
+    "definition": "Các chất tự nhiên có trong vỏ Trái Đất mà con người có thể khai thác và sử dụng.",
+    "category": "Tự nhiên"
+  },
+  {
+    "term": "Đất feralit",
+    "definition": "Loại đất đỏ vàng phổ biến ở vùng khí hậu nhiệt đới ẩm, hình thành do quá trình phong hóa mạnh.",
+    "category": "Tự nhiên"
+  },
+  {
+    "term": "Sinh vật",
+    "definition": "Toàn bộ các loài động, thực vật sinh sống trên bề mặt Trái Đất.",
+    "category": "Tự nhiên"
+  },
+  {
+    "term": "Thảm thực vật",
+    "definition": "Tập hợp các loài cây sinh sống trên một lãnh thổ nhất định.",
+    "category": "Tự nhiên"
+  },
+  {
+    "term": "Tài nguyên thiên nhiên",
+    "definition": "Các yếu tố tự nhiên như đất, nước, rừng, khoáng sản mà con người có thể khai thác phục vụ đời sống.",
+    "category": "Tự nhiên"
+  },
+  {
+    "term": "Động đất",
+    "definition": "Hiện tượng rung chuyển đột ngột của vỏ Trái Đất do giải phóng năng lượng từ các mảng kiến tạo.",
+    "category": "Tự nhiên"
+  },
+  {
+    "term": "Núi lửa",
+    "definition": "Hiện tượng magma từ sâu trong lòng đất phun trào lên bề mặt qua các khe nứt.",
+    "category": "Tự nhiên"
+  },
+  {
+    "term": "Đồng bằng",
+    "definition": "Vùng đất thấp, tương đối bằng phẳng, thuận lợi cho sản xuất nông nghiệp.",
+    "category": "Tự nhiên"
+  },
+  {
+    "term": "Cao nguyên",
+    "definition": "Vùng đất cao, tương đối bằng phẳng, thường nằm giữa hoặc trên các dãy núi.",
+    "category": "Tự nhiên"
+  },
+  {
+    "term": "Đới khí hậu",
+    "definition": "Khu vực có đặc điểm khí hậu riêng biệt, phân bố theo vĩ độ.",
+    "category": "Tự nhiên"
+  },
+  {
+    "term": "Vĩ độ địa lí",
+    "definition": "Khoảng cách tính bằng độ từ xích đạo đến một điểm trên bề mặt Trái Đất.",
+    "category": "Tự nhiên"
+  },
+  {
+    "term": "Kinh độ địa lí",
+    "definition": "Khoảng cách tính bằng độ từ kinh tuyến gốc đến một điểm trên bề mặt Trái Đất.",
+    "category": "Tự nhiên"
+  },
+  {
+    "term": "Bán cầu",
+    "definition": "Một nửa của Trái Đất được chia bởi xích đạo hoặc kinh tuyến gốc.",
+    "category": "Tự nhiên"
+  },
+  {
+    "term": "Xích đạo",
+    "definition": "Đường tròn lớn nhất trên Trái Đất, chia Trái Đất thành hai bán cầu Bắc và Nam.",
+    "category": "Tự nhiên"
+  },
+  {
+    "term": "Đới nóng",
+    "definition": "Khu vực nằm giữa hai chí tuyến, có nhiệt độ cao quanh năm.",
+    "category": "Tự nhiên"
+  },
+  {
+    "term": "Mật độ dân số",
+    "definition": "Số dân cư trung bình trên một đơn vị diện tích, thường tính bằng người/km².",
+    "category": "Dân cư"
+  },
+  {
+    "term": "Gia tăng dân số",
+    "definition": "Sự thay đổi về quy mô dân số qua thời gian do sinh, tử và di cư.",
+    "category": "Dân cư"
+  },
+  {
+    "term": "Tỉ suất sinh",
+    "definition": "Số trẻ em được sinh ra trên 1000 người trong một năm.",
+    "category": "Dân cư"
+  },
+  {
+    "term": "Tỉ suất tử",
+    "definition": "Số người chết trên 1000 người trong một năm.",
+    "category": "Dân cư"
+  },
+  {
+    "term": "Tuổi thọ trung bình",
+    "definition": "Số năm trung bình mà một người có thể sống dựa trên điều kiện sống và y tế hiện tại.",
+    "category": "Dân cư"
+  },
+  {
+    "term": "Cơ cấu dân số",
+    "definition": "Sự phân chia dân số theo giới tính, độ tuổi hoặc lao động.",
+    "category": "Dân cư"
+  },
+  {
+    "term": "Dân số trẻ",
+    "definition": "Cơ cấu dân số có tỉ lệ người dưới 15 tuổi cao.",
+    "category": "Dân cư"
+  },
+  {
+    "term": "Dân số già",
+    "definition": "Cơ cấu dân số có tỉ lệ người trên 65 tuổi cao.",
+    "category": "Dân cư"
+  },
+  {
+    "term": "Di cư",
+    "definition": "Sự di chuyển chỗ ở của con người từ nơi này đến nơi khác trong thời gian dài.",
+    "category": "Dân cư"
+  },
+  {
+    "term": "Đô thị hóa",
+    "definition": "Quá trình chuyển dịch dân cư và kinh tế từ nông thôn sang đô thị.",
+    "category": "Dân cư"
+  },
+  {
+    "term": "Phân bố dân cư",
+    "definition": "Cách thức dân cư sinh sống và tập trung trên lãnh thổ.",
+    "category": "Dân cư"
+  },
+  {
+    "term": "Mật độ dân số trung bình",
+    "definition": "Tổng số dân chia cho tổng diện tích của lãnh thổ.",
+    "category": "Dân cư"
+  },
+  {
+    "term": "Thành thị",
+    "definition": "Khu vực tập trung đông dân cư, có cơ sở hạ tầng hiện đại, hoạt động kinh tế chủ yếu là phi nông nghiệp.",
+    "category": "Dân cư"
+  },
+  {
+    "term": "Nông thôn",
+    "definition": "Khu vực có mật độ dân cư thấp, hoạt động kinh tế chủ yếu là nông nghiệp.",
+    "category": "Dân cư"
+  },
+  {
+    "term": "Lao động",
+    "definition": "Những người trong độ tuổi có khả năng và tham gia hoạt động kinh tế.",
+    "category": "Dân cư"
+  },
+  {
+    "term": "Tỉ lệ thất nghiệp",
+    "definition": "Tỉ lệ người không có việc làm nhưng đang tìm việc trên tổng số lao động.",
+    "category": "Dân cư"
+  },
+  {
+    "term": "Dân tộc",
+    "definition": "Nhóm người có chung nguồn gốc, ngôn ngữ, văn hóa và truyền thống.",
+    "category": "Dân cư"
+  },
+  {
+    "term": "Tôn giáo",
+    "definition": "Hệ thống tín ngưỡng, niềm tin về các lực lượng siêu nhiên và các quy tắc đạo đức.",
+    "category": "Dân cư"
+  },
+  {
+    "term": "Chất lượng dân số",
+    "definition": "Mức độ đáp ứng về thể lực, trí lực và tinh thần của con người đối với yêu cầu phát triển xã hội.",
+    "category": "Dân cư"
+  },
+  {
+    "term": "Mức sinh thay thế",
+    "definition": "Mức sinh cần thiết để dân số duy trì ổn định, thường là khoảng 2,1 con/phụ nữ.",
+    "category": "Dân cư"
+  },
+  {
+    "term": "Tăng trưởng tự nhiên",
+    "definition": "Mức tăng dân số do chênh lệch giữa tỉ suất sinh và tử.",
+    "category": "Dân cư"
+  },
+  {
+    "term": "Phân bố dân cư không đồng đều",
+    "definition": "Hiện tượng dân cư tập trung ở một số vùng trong khi vùng khác rất thưa thớt.",
+    "category": "Dân cư"
+  },
+  {
+    "term": "Di dân",
+    "definition": "Quá trình người dân rời khỏi nơi cư trú để đến nơi khác sinh sống lâu dài.",
+    "category": "Dân cư"
+  },
+  {
+    "term": "Chuyển dịch cơ cấu dân số",
+    "definition": "Sự thay đổi tỉ trọng các nhóm tuổi, giới tính, hoặc thành phần lao động theo thời gian.",
+    "category": "Dân cư"
+  },
+  {
+    "term": "Sức ép dân số",
+    "definition": "Tình trạng dân số đông vượt quá khả năng đáp ứng của tài nguyên và việc làm.",
+    "category": "Dân cư"
+  },
+  {
+    "term": "GDP",
+    "definition": "Tổng sản phẩm quốc nội, phản ánh tổng giá trị hàng hóa và dịch vụ được sản xuất trong lãnh thổ.",
+    "category": "Kinh tế"
+  },
+  {
+    "term": "Công nghiệp hóa",
+    "definition": "Quá trình chuyển đổi nền kinh tế từ nông nghiệp sang công nghiệp và dịch vụ.",
+    "category": "Kinh tế"
+  },
+  {
+    "term": "Đô thị hóa kinh tế",
+    "definition": "Sự mở rộng không gian và vai trò của các đô thị trong phát triển kinh tế
