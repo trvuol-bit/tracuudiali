@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import terms from "./data/terms";
+import terms from "./data/terms.json";
 import "./App.css";
 
 function App() {
