@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="App" style={{ padding: "30px", fontFamily: "sans-serif" }}>
-      <h1>📘 Tra cứu thuật ngữ Địa lí</h1>
+      <h1>📘 TRA CỨU THUẬT NGỮ ĐỊA LÍ</h1>
 
       <input
         type="text"
