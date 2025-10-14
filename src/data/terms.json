@@ -261,4 +261,157 @@
   },
   {
     "term": "Đô thị hóa kinh tế",
-    "definition": "Sự mở rộng không gian và vai trò của các đô thị trong phát triển kinh tế
+    "definition": "Sự mở rộng không gian và vai trò của các đô thị trong phát triển kinh tế.",
+    "category": "Kinh tế"
+  },
+  {
+    "term": "Thương mại",
+    "definition": "Hoạt động mua bán hàng hóa và dịch vụ giữa các cá nhân, tổ chức hoặc quốc gia.",
+    "category": "Kinh tế"
+  },
+  {
+    "term": "Xuất khẩu",
+    "definition": "Bán hàng hóa và dịch vụ ra nước ngoài để thu ngoại tệ.",
+    "category": "Kinh tế"
+  },
+  {
+    "term": "Nhập khẩu",
+    "definition": "Mua hàng hóa và dịch vụ từ nước ngoài để phục vụ nhu cầu trong nước.",
+    "category": "Kinh tế"
+  },
+  {
+    "term": "Cán cân thương mại",
+    "definition": "Sự chênh lệch giữa giá trị xuất khẩu và nhập khẩu của một quốc gia.",
+    "category": "Kinh tế"
+  },
+  {
+    "term": "Đầu tư nước ngoài (FDI)",
+    "definition": "Nguồn vốn đầu tư từ các tổ chức hoặc cá nhân nước ngoài vào trong nước.",
+    "category": "Kinh tế"
+  },
+  {
+    "term": "Kinh tế tri thức",
+    "definition": "Nền kinh tế dựa trên tri thức, công nghệ và sáng tạo làm động lực phát triển.",
+    "category": "Kinh tế"
+  },
+  {
+    "term": "Công nghiệp nặng",
+    "definition": "Ngành sản xuất tư liệu sản xuất như luyện kim, cơ khí, năng lượng.",
+    "category": "Kinh tế"
+  },
+  {
+    "term": "Công nghiệp nhẹ",
+    "definition": "Ngành sản xuất hàng tiêu dùng như dệt may, thực phẩm, đồ gia dụng.",
+    "category": "Kinh tế"
+  },
+  {
+    "term": "Dịch vụ",
+    "definition": "Ngành kinh tế không tạo ra sản phẩm vật chất nhưng cung cấp tiện ích cho xã hội.",
+    "category": "Kinh tế"
+  },
+  {
+    "term": "Kinh tế biển",
+    "definition": "Các hoạt động kinh tế gắn với khai thác và sử dụng tài nguyên biển.",
+    "category": "Kinh tế"
+  },
+  {
+    "term": "Nông nghiệp hàng hóa",
+    "definition": "Nông nghiệp sản xuất ra sản phẩm để bán, không chỉ để tự cung tự cấp.",
+    "category": "Kinh tế"
+  },
+  {
+    "term": "Nông nghiệp công nghệ cao",
+    "definition": "Ứng dụng khoa học kỹ thuật tiên tiến vào sản xuất nông nghiệp.",
+    "category": "Kinh tế"
+  },
+  {
+    "term": "Thị trường",
+    "definition": "Nơi diễn ra hoạt động mua bán hàng hóa, dịch vụ giữa người mua và người bán.",
+    "category": "Kinh tế"
+  },
+  {
+    "term": "Lạm phát",
+    "definition": "Sự tăng giá hàng hóa và dịch vụ trên diện rộng trong một thời gian dài.",
+    "category": "Kinh tế"
+  },
+  {
+    "term": "Ngân hàng",
+    "definition": "Tổ chức tài chính trung gian thực hiện các hoạt động gửi tiền, cho vay và thanh toán.",
+    "category": "Kinh tế"
+  },
+  {
+    "term": "Thị trường lao động",
+    "definition": "Nơi diễn ra các hoạt động tuyển dụng và tìm việc làm giữa người lao động và doanh nghiệp.",
+    "category": "Kinh tế"
+  },
+  {
+    "term": "Kinh tế tư nhân",
+    "definition": "Thành phần kinh tế do cá nhân hoặc tổ chức ngoài nhà nước sở hữu và điều hành.",
+    "category": "Kinh tế"
+  },
+  {
+    "term": "Kinh tế nhà nước",
+    "definition": "Thành phần kinh tế do nhà nước sở hữu, quản lý và điều hành.",
+    "category": "Kinh tế"
+  },
+  {
+    "term": "Nông nghiệp bền vững",
+    "definition": "Nông nghiệp đảm bảo hiệu quả kinh tế, xã hội và môi trường lâu dài.",
+    "category": "Kinh tế"
+  },
+  {
+    "term": "Khu công nghiệp",
+    "definition": "Khu vực tập trung các cơ sở sản xuất công nghiệp được quy hoạch và quản lý thống nhất.",
+    "category": "Kinh tế"
+  },
+  {
+    "term": "Môi trường",
+    "definition": "Tổng hợp các yếu tố tự nhiên và xã hội bao quanh con người, ảnh hưởng đến đời sống và phát triển.",
+    "category": "Môi trường"
+  },
+  {
+    "term": "Ô nhiễm môi trường",
+    "definition": "Sự biến đổi các thành phần môi trường vượt quá giới hạn cho phép, gây hại đến con người và sinh vật.",
+    "category": "Môi trường"
+  },
+  {
+    "term": "Biến đổi khí hậu",
+    "definition": "Sự thay đổi lâu dài về nhiệt độ, lượng mưa, gió và các hiện tượng thời tiết khác.",
+    "category": "Môi trường"
+  },
+  {
+    "term": "Hiệu ứng nhà kính",
+    "definition": "Hiện tượng khí CO2 và các khí khác giữ nhiệt trong khí quyển, làm Trái Đất ấm lên.",
+    "category": "Môi trường"
+  },
+  {
+    "term": "Tài nguyên tái tạo",
+    "definition": "Nguồn tài nguyên có thể phục hồi tự nhiên trong thời gian ngắn như nước, rừng, sinh vật.",
+    "category": "Môi trường"
+  },
+  {
+    "term": "Tài nguyên không tái tạo",
+    "definition": "Nguồn tài nguyên có giới hạn, hình thành trong thời gian rất dài như than, dầu, khoáng sản.",
+    "category": "Môi trường"
+  },
+  {
+    "term": "Suy thoái môi trường",
+    "definition": "Sự giảm sút chất lượng môi trường do hoạt động của con người hoặc thiên nhiên.",
+    "category": "Môi trường"
+  },
+  {
+    "term": "Phát triển bền vững",
+    "definition": "Sự phát triển đáp ứng nhu cầu hiện tại mà không làm tổn hại đến khả năng của thế hệ tương lai.",
+    "category": "Môi trường"
+  },
+  {
+    "term": "Tái chế",
+    "definition": "Quá trình xử lý vật liệu đã qua sử dụng để tạo ra sản phẩm mới.",
+    "category": "Môi trường"
+  },
+  {
+    "term": "Đa dạng sinh học",
+    "definition": "Sự phong phú của các loài sinh vật trong một khu vực hoặc toàn cầu.",
+    "category": "Môi trường"
+  }
+]
