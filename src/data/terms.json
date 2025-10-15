@@ -1,8 +1,27 @@
-[ {
-  "term": "Số ngày có 24 giờ toàn ngày (ngày địa cực) hoặc toàn đêm (đêm địa cực) ở bán cầu Bắc và bán cầu Nam",
-  "definition": "Số ngày toàn ngày chỉ xảy ra trong mùa nóng ở mỗi bán cầu. Bán cầu Bắc có số ngày có 24 giờ toàn ngày (ngày địa cực) nhiều hơn ở bán cầu Nam, số ngày toàn đêm (đêm địa cực) ít hơn ở bán cầu Nam; bán cầu Nam thì ngược lại. Từ 21/3 đến 23/9, Trái Đất di chuyển trên quỹ đạo có điểm viễn nhật, sức hút của Mặt Trời nhỏ hơn làm cho vận tốc của Trái Đất giảm, thời kì nóng của bán cầu Bắc dài tới 186 ngày. Do vậy, số ngày toàn ngày tại cực là 186 ngày. Từ 23/9 đến 21/3, Trái Đất di chuyển ở quỹ đạo có điểm cận nhật, sức hút của Mặt Trời lớn hơn nên vận tốc tăng, thời kì nóng của bán cầu Nam chỉ dài 179 ngày. Do vậy, số ngày toàn ngày chỉ có 179 ngày và số ngày toàn đêm là 186 ngày.",
-  "category": "Tự nhiên"
-},
+[[
+  {
+    "term": "Ngày địa cực và đêm địa cực",
+    "definition": "Hiện tượng có ngày dài suốt 24 giờ hoặc đêm kéo dài suốt 24 giờ ở vùng cực.",
+    "details": [
+      "Ngày địa cực xảy ra vào mùa hè khi Mặt Trời không bao giờ lặn ở vùng cực.",
+      "Đêm địa cực xảy ra vào mùa đông khi Mặt Trời không mọc trong suốt 24 giờ.",
+      "Hiện tượng này xuất hiện do trục Trái Đất nghiêng 66°33' so với mặt phẳng quỹ đạo."
+    ],
+    "image": "/images/ngay-dem-dia-cuc.jpg",
+    "category": "Tự nhiên"
+  },
+  {
+    "term": "Sự luân phiên ngày đêm",
+    "definition": "Do Trái Đất tự quay quanh trục nên tại cùng một thời điểm, nơi này là ban ngày, nơi khác là ban đêm.",
+    "details": [
+      "Trái Đất quay từ tây sang đông nên Mặt Trời mọc ở hướng đông và lặn ở hướng tây.",
+      "Một vòng quay của Trái Đất mất khoảng 24 giờ – tương ứng một ngày đêm.",
+      "Hiện tượng này quyết định giờ giấc, múi giờ và nhịp sống trên toàn cầu."
+    ],
+    "image": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Earth_rotation_day_night.gif",
+    "category": "Tự nhiên"
+  }
+]
   {
     "term": "Nhiệt độ trung bình năm",
     "definition": "Giá trị trung bình của nhiệt độ không khí trong 12 tháng của một năm.",
