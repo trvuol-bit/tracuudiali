@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-// Dữ liệu mẫu để thử
+// Dữ liệu mẫu
 const data = [
   {
     term: "Ngày địa cực và đêm địa cực",
@@ -15,85 +15,163 @@ Ngược lại, ở bán cầu Nam, thời kì nóng chỉ dài 179 ngày, nên 
   {
     term: "Đường chí tuyến",
     definition:
-      "Là hai đường vĩ tuyến giới hạn khu vực có hiện tượng Mặt Trời lên thiên đỉnh một lần trong năm.",
-    info: `Đường chí tuyến Bắc nằm ở 23°27'B (chí tuyến Bắc) và đường chí tuyến Nam ở 23°27'N (chí tuyến Nam). 
+      "Hai đường vĩ tuyến giới hạn khu vực có hiện tượng Mặt Trời lên thiên đỉnh một lần trong năm.",
+    info: `Đường chí tuyến Bắc nằm ở 23°27'B (chí tuyến Bắc) và chí tuyến Nam ở 23°27'N (chí tuyến Nam). 
 Khu vực giữa hai đường chí tuyến là vùng nội chí tuyến – nơi có nhiệt độ cao quanh năm và có thể có hai lần Mặt Trời lên thiên đỉnh.`,
     image: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Tropic_of_Cancer_Tropic_of_Capricorn.png",
+  },
+  {
+    term: "Đường xích đạo",
+    definition:
+      "Đường vĩ tuyến lớn nhất trên Trái Đất, chia địa cầu thành hai bán cầu Bắc và Nam.",
+    info: `Đường xích đạo có vĩ độ 0°, chiều dài khoảng 40.075 km. 
+Nơi đây có nhiệt độ cao quanh năm, độ dài ngày và đêm gần như bằng nhau.`,
+    image: "https://upload.wikimedia.org/wikipedia/commons/0/08/Equator_map.png",
   },
 ];
 
 function App() {
-  const [term, setTerm] = useState("");
-  const [result, setResult] = useState(null);
+  const [search, setSearch] = useState("");
+  const [selectedTerm, setSelectedTerm] = useState(null);
 
-  const handleSearch = () => {
-    const found = data.find((item) =>
-      item.term.toLowerCase().includes(term.toLowerCase())
-    );
-    setResult(found || null);
+  const filtered = data.filter((item) =>
+    item.term.toLowerCase().includes(search.toLowerCase())
+  );
+
+  const handleSelect = (term) => {
+    setSelectedTerm(term);
+    setSearch(term.term);
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 p-6">
-      <div className="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl p-6">
-        <h1 className="text-2xl font-bold mb-4 text-center text-blue-700">
+    <div
+      className="App"
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        background: "#f4f6f8",
+        fontFamily: "sans-serif",
+      }}
+    >
+      <div
+        style={{
+          background: "white",
+          padding: "30px",
+          borderRadius: "20px",
+          boxShadow: "0 4px 15px rgba(0,0,0,0.1)",
+          width: "90%",
+          maxWidth: "600px",
+          textAlign: "center",
+        }}
+      >
+        <h1 style={{ color: "#1a56db", marginBottom: "20px" }}>
           🔍 Tra cứu thuật ngữ Địa lí
         </h1>
 
         {/* Ô tìm kiếm */}
-        <div className="flex gap-2 mb-4">
+        <div style={{ position: "relative" }}>
           <input
-            value={term}
-            onChange={(e) => setTerm(e.target.value)}
-            placeholder="Nhập thuật ngữ cần tìm (ví dụ: ngày địa cực)..."
-            className="flex-1 border rounded-lg px-3 py-2 outline-none focus:ring-2 focus:ring-blue-400"
+            type="text"
+            placeholder="Nhập thuật ngữ cần tìm (ví dụ: chí tuyến, địa cực...)"
+            value={search}
+            onChange={(e) => {
+              setSearch(e.target.value);
+              setSelectedTerm(null);
+            }}
+            style={{
+              padding: "10px",
+              width: "100%",
+              borderRadius: "8px",
+              border: "1px solid #ccc",
+              outline: "none",
+              marginBottom: "10px",
+            }}
           />
-          <button
-            onClick={handleSearch}
-            className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"
-          >
-            Tìm
-          </button>
+
+          {/* Gợi ý */}
+          {search && !selectedTerm && filtered.length > 0 && (
+            <ul
+              style={{
+                listStyle: "none",
+                margin: 0,
+                padding: "5px",
+                background: "white",
+                border: "1px solid #ccc",
+                borderRadius: "8px",
+                position: "absolute",
+                top: "42px",
+                width: "100%",
+                textAlign: "left",
+                zIndex: 10,
+                maxHeight: "200px",
+                overflowY: "auto",
+              }}
+            >
+              {filtered.map((item, index) => (
+                <li
+                  key={index}
+                  onClick={() => handleSelect(item)}
+                  style={{
+                    padding: "8px",
+                    cursor: "pointer",
+                    borderBottom: "1px solid #eee",
+                  }}
+                  onMouseOver={(e) =>
+                    (e.target.style.background = "#f0f4ff")
+                  }
+                  onMouseOut={(e) => (e.target.style.background = "white")}
+                >
+                  {item.term}
+                </li>
+              ))}
+            </ul>
+          )}
+
+          {/* Không tìm thấy */}
+          {search && filtered.length === 0 && !selectedTerm && (
+            <div
+              style={{
+                background: "#fff",
+                border: "1px solid #ccc",
+                borderRadius: "8px",
+                position: "absolute",
+                top: "42px",
+                width: "100%",
+                padding: "10px",
+                textAlign: "left",
+                color: "#666",
+              }}
+            >
+              ❌ Không tìm thấy thuật ngữ phù hợp.
+            </div>
+          )}
         </div>
 
         {/* Hiển thị kết quả */}
-        {result ? (
-          <div className="mt-6 space-y-4 animate-fadeIn">
-            <div className="border-b pb-2">
-              <h2 className="text-xl font-semibold text-gray-800">
-                {result.term}
-              </h2>
-              <p className="text-gray-700 whitespace-pre-line mt-1">
-                {result.definition}
-              </p>
-            </div>
-
-            {result.info && (
-              <div>
-                <h3 className="font-medium text-gray-800 mb-2">
-                  Thông tin chi tiết:
-                </h3>
-                <p className="text-gray-600 whitespace-pre-line">
-                  {result.info}
-                </p>
-              </div>
-            )}
-
-            {result.image && (
-              <div className="flex justify-center mt-4">
+        {selectedTerm && (
+          <div style={{ textAlign: "left", marginTop: "20px" }}>
+            <h2 style={{ color: "#333" }}>{selectedTerm.term}</h2>
+            <p style={{ whiteSpace: "pre-line" }}>{selectedTerm.definition}</p>
+            <p style={{ whiteSpace: "pre-line", color: "#555" }}>
+              {selectedTerm.info}
+            </p>
+            {selectedTerm.image && (
+              <div style={{ textAlign: "center", marginTop: "15px" }}>
                 <img
-                  src={result.image}
-                  alt={result.term}
-                  className="max-h-64 rounded-xl shadow-lg"
+                  src={selectedTerm.image}
+                  alt={selectedTerm.term}
+                  style={{
+                    maxWidth: "100%",
+                    borderRadius: "10px",
+                    boxShadow: "0 2px 10px rgba(0,0,0,0.1)",
+                  }}
                 />
               </div>
             )}
           </div>
-        ) : term ? (
-          <p className="text-center text-gray-500 mt-6">
-            ❌ Không tìm thấy thuật ngữ phù hợp.
-          </p>
-        ) : null}
+        )}
       </div>
     </div>
   );
