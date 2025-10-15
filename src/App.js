@@ -1,40 +1,97 @@
 import React, { useState } from "react";
 
-// Dữ liệu mẫu
-const data = [
-  {
-    term: "Ngày địa cực và đêm địa cực",
-    definition:
-      "Hiện tượng xảy ra ở các vùng vĩ độ cao, khi Mặt Trời không lặn (ngày địa cực) hoặc không mọc (đêm địa cực) trong 24 giờ.",
-    info: `Số ngày toàn ngày chỉ xảy ra trong mùa nóng ở mỗi bán cầu. 
-Bán cầu Bắc có số ngày có 24 giờ toàn ngày (ngày địa cực) nhiều hơn ở bán cầu Nam, 
-vì thời gian từ 21/3 đến 23/9 dài hơn (186 ngày) do Trái Đất di chuyển chậm hơn khi ở điểm viễn nhật. 
-Ngược lại, ở bán cầu Nam, thời kì nóng chỉ dài 179 ngày, nên số ngày toàn ngày ít hơn và số ngày toàn đêm nhiều hơn (186 ngày).`,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Polar_day_and_night.svg/800px-Polar_day_and_night.svg.png",
-  },
-  {
-    term: "Đường chí tuyến",
-    definition:
-      "Hai đường vĩ tuyến giới hạn khu vực có hiện tượng Mặt Trời lên thiên đỉnh một lần trong năm.",
-    info: `Đường chí tuyến Bắc nằm ở 23°27'B (chí tuyến Bắc) và chí tuyến Nam ở 23°27'N (chí tuyến Nam). 
-Khu vực giữa hai đường chí tuyến là vùng nội chí tuyến – nơi có nhiệt độ cao quanh năm và có thể có hai lần Mặt Trời lên thiên đỉnh.`,
-    image: "https://upload.wikimedia.org/wikipedia/commons/4/4d/Tropic_of_Cancer_Tropic_of_Capricorn.png",
-  },
-  {
-    term: "Đường xích đạo",
-    definition:
-      "Đường vĩ tuyến lớn nhất trên Trái Đất, chia địa cầu thành hai bán cầu Bắc và Nam.",
-    info: `Đường xích đạo có vĩ độ 0°, chiều dài khoảng 40.075 km. 
+// ==== DỮ LIỆU MẪU CHO 4 CHỦ ĐỀ ====
+const data = {
+  "Tự nhiên": [
+    {
+      term: "Ngày địa cực và đêm địa cực",
+      definition:
+        "Hiện tượng xảy ra ở các vùng vĩ độ cao, khi Mặt Trời không lặn (ngày địa cực) hoặc không mọc (đêm địa cực) trong 24 giờ.",
+      info: `Số ngày toàn ngày chỉ xảy ra trong mùa nóng ở mỗi bán cầu. 
+Bán cầu Bắc có số ngày toàn ngày nhiều hơn bán cầu Nam vì thời gian từ 21/3–23/9 dài hơn (186 ngày) do Trái Đất di chuyển chậm hơn ở điểm viễn nhật. 
+Ngược lại, ở bán cầu Nam thời kì nóng chỉ 179 ngày nên số ngày toàn ngày ít hơn và số ngày toàn đêm nhiều hơn (186 ngày).`,
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Polar_day_and_night.svg/800px-Polar_day_and_night.svg.png",
+    },
+    {
+      term: "Đường xích đạo",
+      definition:
+        "Đường vĩ tuyến lớn nhất trên Trái Đất, chia địa cầu thành hai bán cầu Bắc và Nam.",
+      info: `Đường xích đạo có vĩ độ 0°, chiều dài khoảng 40.075 km. 
 Nơi đây có nhiệt độ cao quanh năm, độ dài ngày và đêm gần như bằng nhau.`,
-    image: "https://upload.wikimedia.org/wikipedia/commons/0/08/Equator_map.png",
-  },
-];
+      image: "https://upload.wikimedia.org/wikipedia/commons/0/08/Equator_map.png",
+    },
+    {
+      term: "Đường chí tuyến",
+      definition:
+        "Hai đường vĩ tuyến giới hạn khu vực có hiện tượng Mặt Trời lên thiên đỉnh một lần trong năm.",
+      info: `Chí tuyến Bắc nằm ở 23°27'B và chí tuyến Nam ở 23°27'N. 
+Khu vực giữa hai chí tuyến là vùng nội chí tuyến – nơi có thể có hai lần Mặt Trời lên thiên đỉnh.`,
+      image:
+        "https://upload.wikimedia.org/wikipedia/commons/4/4d/Tropic_of_Cancer_Tropic_of_Capricorn.png",
+    },
+  ],
+
+  "Dân cư": [
+    {
+      term: "Mật độ dân số",
+      definition: "Số dân trung bình sinh sống trên một đơn vị diện tích (người/km²).",
+      info: `Mật độ dân số phản ánh mức độ tập trung dân cư, là chỉ tiêu quan trọng trong quy hoạch phát triển kinh tế – xã hội.`,
+      image: "https://upload.wikimedia.org/wikipedia/commons/5/5e/World_population_density_map.PNG",
+    },
+    {
+      term: "Gia tăng dân số tự nhiên",
+      definition: "Sự chênh lệch giữa tỉ suất sinh và tỉ suất tử trong một giai đoạn.",
+      info: `Gia tăng dân số tự nhiên = Tỉ suất sinh - Tỉ suất tử. 
+Chỉ số này dương → dân số tăng; âm → dân số giảm.`,
+      image: "https://upload.wikimedia.org/wikipedia/commons/2/2c/Birth_rate_world_map.PNG",
+    },
+  ],
+
+  "Kinh tế": [
+    {
+      term: "Công nghiệp hóa",
+      definition:
+        "Quá trình chuyển đổi nền kinh tế từ dựa chủ yếu vào nông nghiệp sang công nghiệp và dịch vụ.",
+      info: `Công nghiệp hóa gắn liền với hiện đại hóa, đòi hỏi đầu tư lớn về cơ sở hạ tầng, khoa học – công nghệ.`,
+      image: "https://upload.wikimedia.org/wikipedia/commons/b/b8/Industrial_Revolution.jpg",
+    },
+    {
+      term: "Kinh tế tri thức",
+      definition:
+        "Nền kinh tế dựa chủ yếu vào tri thức, khoa học – công nghệ và sáng tạo.",
+      info: `Ví dụ: Nhật Bản, Hoa Kỳ, Hàn Quốc là các nước điển hình của kinh tế tri thức, trong đó tỉ trọng ngành dịch vụ và công nghệ cao chiếm trên 70% GDP.`,
+      image: "https://upload.wikimedia.org/wikipedia/commons/3/31/Innovation_economy.jpg",
+    },
+  ],
+
+  "Môi trường": [
+    {
+      term: "Ô nhiễm môi trường",
+      definition:
+        "Sự thay đổi các yếu tố tự nhiên khiến môi trường trở nên độc hại đối với con người và sinh vật.",
+      info: `Các dạng ô nhiễm phổ biến: không khí, nước, đất, tiếng ồn, ánh sáng. 
+Nguyên nhân chủ yếu là do hoạt động công nghiệp, giao thông và đô thị hóa.`,
+      image: "https://upload.wikimedia.org/wikipedia/commons/8/88/Air_pollution.jpg",
+    },
+    {
+      term: "Biến đổi khí hậu",
+      definition:
+        "Sự thay đổi dài hạn về nhiệt độ, lượng mưa và các yếu tố khí hậu khác của Trái Đất.",
+      info: `Nguyên nhân chính là do hiệu ứng nhà kính gia tăng. 
+Hậu quả: băng tan, mực nước biển dâng, thời tiết cực đoan.`,
+      image: "https://upload.wikimedia.org/wikipedia/commons/8/8a/Climate_change.jpg",
+    },
+  ],
+};
 
 function App() {
+  const [topic, setTopic] = useState("Tự nhiên");
   const [search, setSearch] = useState("");
   const [selectedTerm, setSelectedTerm] = useState(null);
 
-  const filtered = data.filter((item) =>
+  const terms = data[topic];
+  const filtered = terms.filter((item) =>
     item.term.toLowerCase().includes(search.toLowerCase())
   );
 
@@ -45,14 +102,13 @@ function App() {
 
   return (
     <div
-      className="App"
       style={{
         minHeight: "100vh",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        background: "#f4f6f8",
-        fontFamily: "sans-serif",
+        background: "#eef3f8",
+        fontFamily: "Segoe UI, sans-serif",
       }}
     >
       <div
@@ -60,9 +116,9 @@ function App() {
           background: "white",
           padding: "30px",
           borderRadius: "20px",
-          boxShadow: "0 4px 15px rgba(0,0,0,0.1)",
+          boxShadow: "0 4px 20px rgba(0,0,0,0.1)",
           width: "90%",
-          maxWidth: "600px",
+          maxWidth: "700px",
           textAlign: "center",
         }}
       >
@@ -70,11 +126,33 @@ function App() {
           🔍 Tra cứu thuật ngữ Địa lí
         </h1>
 
+        {/* Chọn chủ đề */}
+        <select
+          value={topic}
+          onChange={(e) => {
+            setTopic(e.target.value);
+            setSelectedTerm(null);
+            setSearch("");
+          }}
+          style={{
+            padding: "10px",
+            width: "100%",
+            borderRadius: "8px",
+            border: "1px solid #ccc",
+            marginBottom: "15px",
+            fontSize: "15px",
+          }}
+        >
+          {Object.keys(data).map((key) => (
+            <option key={key}>{key}</option>
+          ))}
+        </select>
+
         {/* Ô tìm kiếm */}
         <div style={{ position: "relative" }}>
           <input
             type="text"
-            placeholder="Nhập thuật ngữ cần tìm (ví dụ: chí tuyến, địa cực...)"
+            placeholder={`Tìm thuật ngữ trong chủ đề ${topic.toLowerCase()}...`}
             value={search}
             onChange={(e) => {
               setSearch(e.target.value);
@@ -149,7 +227,7 @@ function App() {
           )}
         </div>
 
-        {/* Hiển thị kết quả */}
+        {/* Kết quả hiển thị */}
         {selectedTerm && (
           <div style={{ textAlign: "left", marginTop: "20px" }}>
             <h2 style={{ color: "#333" }}>{selectedTerm.term}</h2>
